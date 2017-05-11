@@ -21,7 +21,7 @@
       document.body.insertBefore(ajax.responseXML.documentElement, document.body.childNodes[0]);
     };
     ajax.send();
-  }
+  };
 
   // Test if browser supports inline-svg
   // Used from Practical SVG by Chris Coyer
@@ -38,5 +38,5 @@
 
   } else {
     document.documentElement.className += " no-svg";
-  }
+  };
 }());

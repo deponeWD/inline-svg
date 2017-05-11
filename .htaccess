@@ -10,6 +10,10 @@ AddType image/svg+xml .svg .svgz
 </IfModule>
 
 # Use gzip for better performance
+<IfModule mod_mime.c>
+  AddEncoding gzip svgz
+</IfModule>
+
 <IfModule mod_deflate.c>
   # Insert filters
   AddOutputFilterByType DEFLATE text/plain
