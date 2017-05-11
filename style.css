@@ -73,11 +73,15 @@ a:focus .social-icon {
 
 /* NOTE:
 * .no-js leads to double download
-* therefore I have added the code with noscript to the header
-* TODO: keep this section synced with what is added to header in the noscript-tag
+* therefore I have added the sprite with noscript to the header
+* TODO: keep the sprite in sync with what is added to header in the noscript-tag
 */
 .no-svg .social-icon {
   background-image: url("./assets/images/sprite.png");
+}
+
+.no-js .social-icon,
+.no-svg .social-icon {
   background-repeat: no-repeat;
 }
 
