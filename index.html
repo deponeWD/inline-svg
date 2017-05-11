@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="de" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <title>SVG direkt nutzen</title>
+    <link rel="stylesheet" href="./style.css">
+    <noscript>
+      <style>
+        /* TODO: keep in sync with .no-svg .social-icon */
+        .no-js .social-icon {
+          background-image: url("./assets/images/sprite.png");
+          background-repeat: no-repeat;
+        }
+      </style>
+    </noscript>
+  </head>
+  <body>
+    <main role="main">
+      <article id="use-inline-svg" class="content" tabindex="-1">
+        <h1>SVG direkt nutzen</h1>
+        <ul class="social-links nols">
+          <li class="social social--twitter">
+            <span class="type">Twitter:</span>
+            <a class="social-link" href="https://twitter.com/depone">
+              <span class="user-name">@depone</span>
+              <svg class="social-icon">
+                <use xlink:href="#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social social--instagram">
+            <span class="type">Instagram:</span>
+            <a class="social-link" href="https://instagram.com/deponev2">
+              <span class="user-name">@deponev2</span>
+              <svg class="social-icon">
+                <use xlink:href="#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social social--facebook">
+            <span class="type">Facebook:</span>
+            <a class="social-link" href="https://www.facebook.com/danielehniss">
+              <span class="user-name">Daniel Ehniss</span>
+              <svg class="social-icon">
+                <use xlink:href="#facebook"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </article>
+    </main>
+  </body>
+  <script src="./assets/scripts/global.js"></script>
+</html>

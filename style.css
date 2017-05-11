@@ -1,0 +1,97 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  color: rgb(51, 51, 51);
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 100%;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 40rem;
+}
+
+.nols {
+  list-style: none;
+  margin-right: 0;
+  margin-left: 0;
+  padding: 0;
+}
+
+.type,
+.user-name {
+  border: 0;
+	clip-path: inset(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+.social {
+  display: inline-block;
+  margin-right: 0.8125rem;
+}
+
+/* Fix extra spacing below svg */
+.content svg {
+  display: block;
+}
+
+a .social-icon,
+a:visited .social-icon {
+  background-color: rgb(51, 51, 51);
+  border-radius: 15%;
+  color: rgb(255, 255, 255);
+  display: block;
+  height: 2.75rem;
+  padding: 0.1875rem;
+  width: 2.75rem;
+  transition: background-color 0.3s ease-out,
+    color 0.3s ease-out;
+}
+
+a:hover .social-icon,
+a:focus .social-icon {
+  background-color: rgb(0, 153, 0);
+  color: rgb(250, 250, 250);
+}
+
+/* NOTE:
+* .no-js leads to double download
+* therefore I have added the code with noscript to the header
+* TODO: keep this section synced with what is added to header in the noscript-tag
+*/
+.no-svg .social-icon {
+  background-image: url("./assets/images/sprite.png");
+  background-repeat: no-repeat;
+}
+
+.no-js .social--twitter .social-icon,
+.no-svg .social--twitter .social-icon {
+  background-position: 0 0;
+}
+
+.no-js .social--instagram .social-icon,
+.no-svg .social--instagram .social-icon {
+  background-position: -3.125rem 0;
+}
+
+.no-js .social--facebook .social-icon,
+.no-svg .social--facebook .social-icon {
+  background-position: -6.25rem 0;
+}
