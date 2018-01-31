@@ -18,6 +18,13 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+/* Hide svg-sprite that is injected into body */
+body > svg {
+  height: 0;
+  display: none;
+  width: 0;
+}
+
 .content,
 .page--footer {
   margin: 0 auto;
